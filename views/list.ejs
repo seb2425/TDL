@@ -1,0 +1,14 @@
+<%-include('header') -%>
+    <h2><%= listname %></h2>
+    <%= DATE %>
+
+    <% for (const i of tar){ %>
+        <ul><%=i%></ul>
+    <%}%>
+    
+    <form class="" action="/" method="POST">
+        <input type="text" name="tdl1" placeholder="enter TDL">
+        <button type="submit" name="lpstname" value=<%=listname %>>OK</button> <br>
+    </form>
+    
+<%-include('footer') -%>
